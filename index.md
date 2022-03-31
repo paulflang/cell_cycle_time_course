@@ -1,114 +1,6 @@
 # `cell_cycle_time_course`
 
-`cell_cycle_time_course` is a repository that stores time courses of cell cycle regulators.
-
-{% assign doclist = site.pages | sort: 'url'  %}
-<ul>
-   {% for doc in doclist %}
-        {% if doc.name contains '.md' or doc.name contains '.html' %}
-            <li><a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.url }}</a></li>
-        {% endif %}
-    {% endfor %}
-</ul>
-
-## Table of Contents
-* 4i_dent_lang
-    * 2019082X_RPE1
-    * 2019XXXX_RPE1_PCNA-fluorescent_protein
-        * MK1775_treated_sorted
-            * C10
-                * curation
-                    * Cytoplasm_Mean_Intensity_mean_DAPI_Rd1_0_A01_C01.html
-                    * Cytoplasm_Mean_Intensity_mean_DAPI_Rd2_1_A01_C01.html
-                    * Cytoplasm_Mean_Intensity_mean_DAPI_Rd3_2_A01_C01.html
-                    * DNA_vs_CCNA.html
-                    * Mean_Morphology_Area.html
-                    * Nuclei_Mean_Morphology_Area.html
-                    * RP1_p_vs_CCNA.html
-                    * detached_metric.html
-                    * segmentation_metric.html
-                    * std_dapi_nucleus.html
-                * kalman.html
-                * parzen.html
-                * raw.html
-            * E10
-                * curation
-                    * Cytoplasm_Mean_Intensity_mean_DAPI_Rd1_0_A01_C01.html
-                    * Cytoplasm_Mean_Intensity_mean_DAPI_Rd2_1_A01_C01.html
-                    * Cytoplasm_Mean_Intensity_mean_DAPI_Rd3_2_A01_C01.html
-                    * DNA_vs_CCNA.html
-                    * Mean_Morphology_Area.html
-                    * Nuclei_Mean_Morphology_Area.html
-                    * RP1_p_vs_CCNA.html
-                    * detached_metric.html
-                    * segmentation_metric.html
-                    * std_dapi_nucleus.html
-                * kalman.html
-                * parzen.html
-                * raw.html
-            * G10
-                * curation
-                    * Cytoplasm_Mean_Intensity_mean_DAPI_Rd1_0_A01_C01.html
-                    * Cytoplasm_Mean_Intensity_mean_DAPI_Rd2_1_A01_C01.html
-                    * Cytoplasm_Mean_Intensity_mean_DAPI_Rd3_2_A01_C01.html
-                    * DNA_vs_CCNA.html
-                    * Mean_Morphology_Area.html
-                    * Nuclei_Mean_Morphology_Area.html
-                    * RP1_p_vs_CCNA.html
-                    * detached_metric.html
-                    * segmentation_metric.html
-                    * std_dapi_nucleus.html
-                * kalman.html
-                * parzen.html
-                * raw.html
-        * untreated_sorted
-            * C09
-                * curation
-                    * Cytoplasm_Mean_Intensity_mean_DAPI_Rd1_0_A01_C01.html
-                    * Cytoplasm_Mean_Intensity_mean_DAPI_Rd2_1_A01_C01.html
-                    * Cytoplasm_Mean_Intensity_mean_DAPI_Rd3_2_A01_C01.html
-                    * DNA_vs_CCNA.html
-                    * Mean_Morphology_Area.html
-                    * Nuclei_Mean_Morphology_Area.html
-                    * RP1_p_vs_CCNA.html
-                    * detached_metric.html
-                    * segmentation_metric.html
-                    * std_dapi_nucleus.html
-                * kalman.html
-                * parzen.html
-                * raw.html
-            * E09
-                * curation
-                    * Cytoplasm_Mean_Intensity_mean_DAPI_Rd1_0_A01_C01.html
-                    * Cytoplasm_Mean_Intensity_mean_DAPI_Rd2_1_A01_C01.html
-                    * Cytoplasm_Mean_Intensity_mean_DAPI_Rd3_2_A01_C01.html
-                    * DNA_vs_CCNA.html
-                    * Mean_Morphology_Area.html
-                    * Nuclei_Mean_Morphology_Area.html
-                    * RP1_p_vs_CCNA.html
-                    * detached_metric.html
-                    * segmentation_metric.html
-                    * std_dapi_nucleus.html
-                * kalman.html
-                * parzen.html
-                * raw.html
-            * G09
-                * curation
-                    * Cytoplasm_Mean_Intensity_mean_DAPI_Rd1_0_A01_C01.html
-                    * Cytoplasm_Mean_Intensity_mean_DAPI_Rd2_1_A01_C01.html
-                    * Cytoplasm_Mean_Intensity_mean_DAPI_Rd3_2_A01_C01.html
-                    * DNA_vs_CCNA.html
-                    * Mean_Morphology_Area.html
-                    * Nuclei_Mean_Morphology_Area.html
-                    * RP1_p_vs_CCNA.html
-                    * detached_metric.html
-                    * segmentation_metric.html
-                    * std_dapi_nucleus.html
-                * kalman.html
-                * parzen.html
-                * raw.html
-
-* 4i_stallaert
+`cell_cycle_time_course` is a repository that stores time courses of cell cycle regulators. Unfortunately, GitHub does not render interactive figures in HTML files. For this reason, we are hosting all HTML files on the `cell_cycle_time_course` repository on this website. You can access individual HTML files by suffixing their path to `https://paulflang.github.io/cell_cycle_time_course/`. For instance, the file `4i_stallaert/2021_Stallaert_cycling_reCAT/kalman.html` can be accessed through [https://paulflang.github.io/cell_cycle_time_course/4i_stallaert/2021_Stallaert_cycling_reCAT/kalman.html](https://paulflang.github.io/cell_cycle_time_course/4i_stallaert/2021_Stallaert_cycling_reCAT/kalman.html). An exhaustive list of all HTML files in this repository is listed below. Alternatively, the HTML files in the GitHub repository can be downloaded and opened with a web browser of your choice.
 
 ## Description
 
@@ -123,3 +15,15 @@
 
 ## Questions and comments
 Please contact [Paul F. Lang](mailto:paul.lang@wolfson.ox.ac.uk) with any questions or comments.
+
+## Content list
+
+{% assign doclist = site.pages | sort: 'url'  %}
+<ul>
+   {% for doc in doclist %}
+        {% if doc.name contains '.md' or doc.name contains '.html' %} <!-- if it ends with .md write basenaeme and set isfile to true, if it does not end with md: if isfile is true minus one indent, else plus one indent
+            <li><a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.url }}</a></li>
+        {% endif %}
+    {% endfor %}
+</ul>
+
