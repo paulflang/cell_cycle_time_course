@@ -21,7 +21,7 @@ Please contact [Paul F. Lang](mailto:paul.lang@wolfson.ox.ac.uk) with any questi
 {% assign doclist = site.pages | sort: 'url'  %}
 <ul>
    {% for doc in doclist %}
-        {% if doc.name contains '.md' or doc.name contains '.html' %} <!-- if it ends with .md write basenaeme and set isfile to true, if it does not end with md: if isfile is true minus one indent, else plus one indent
+        {% if doc.name contains '.md' or doc.name contains '.html' %}
             <li><a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.url }}</a></li>
         {% endif %}
     {% endfor %}
