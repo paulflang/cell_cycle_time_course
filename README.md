@@ -1,5 +1,7 @@
 # `cell_cycle_time_course`
 
+[![DOI](https://zenodo.org/badge/469810722.svg)](https://zenodo.org/badge/latestdoi/469810722)
+
 `cell_cycle_time_course` is a repository that stores time courses of cell cycle regulators. It contains interactive figures in HTML format. To view this figures, please either download the HTML file and open it in a web browser or visit [https://paulflang.github.io/cell_cycle_time_course](https://paulflang.github.io/cell_cycle_time_course).
 
 ## Description
